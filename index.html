@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phone Hunter!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Phone Hunter!!!</h1>
+    </header>
+    <main class="container">
+      <!-- search field  -->
+      <section>
+        <div class="mb-3 w-50">
+          <input
+            type="text"
+            class="form-control my-2 p-2"
+            id="search-field"
+            placeholder="search your phone"
+          />
+          <button id="searchPhone" class="btn btn-primary">Search</button>
+        </div>
+      </section>
+
+      <section>
+        <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div id="no-found-message" class="mt-4 text-warning d-none">
+          <h3>No phones found. Please try a new search</h3>
+        </div>
+      </section>
+      <!-- show all button  -->
+      <section id="show-all" class="text-center d-none my-4">
+        <div>
+          <button
+            id="show-all-btn"
+            style="width: 200px"
+            class="btn btn-primary p-2"
+          >
+            show All
+          </button>
+        </div>
+      </section>
+      <!-- loader  -->
+      <section id="loader" class="d-none">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="phone.js"></script>
+  </body>
+</html>
